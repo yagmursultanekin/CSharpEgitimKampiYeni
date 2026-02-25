@@ -241,9 +241,67 @@ namespace _03_MakingDecision
 
             #endregion
 
+            #region Switch Case
+
+            //Console.Write("Lütfen ay girişi yapınız: ");
+            //    int monthNumber=int.Parse(Console.ReadLine());
+
+            //switch (monthNumber)
+            //{
+            //    case 1:Console.Write("Ocak");break;
+            //    case 2:Console.Write("Şubat"); break;
+            //    case 3:Console.Write("Mart"); break;
+            //    case 4:Console.Write("Nisan"); break;
+            //    case 5:Console.Write("Mayıs"); break;
+            //    case 6:Console.Write("Haziran"); break;
+            //    case 7:Console.Write("Temmuz"); break;
+            //    case 8:Console.Write("Ağustos"); break;
+            //    case 9:Console.Write("Eylül"); break;
+            //    case 10:Console.Write("Ekim"); break;
+            //    case 11:Console.Write("Kasım"); break;
+            //    case 12:Console.Write("Aralık"); break;
+            //    default: Console.Write("Hatalı veri girişi");break;
+            //}
 
 
+            #endregion
 
+            #region Switch Case Hesap Makinesi
+
+            //int number1, number2, result;
+            //char symbol;
+
+            //Console.Write("lütfen birinci sayıyı giriniz: ");
+            //number1 = int.Parse(Console.ReadLine());
+
+            //Console.Write("Lütfen ikinci sayıyı giriniz: ");
+            //number2 = int.Parse(Console.ReadLine());
+
+            //Console.Write("lütfen işlem yapmak istediğiniz sembolü giriniz: ");
+            //symbol=char.Parse(Console.ReadLine());
+
+            //switch (symbol)
+            //{
+            //    case '+': result = number1 + number2;
+            //        Console.WriteLine("Toplam: "+result);
+            //        break;
+
+            //    case '-': result = number1 - number2;
+            //        Console.WriteLine("Fark: "+result);
+            //        break;
+
+            //    case '*': result = number1 * number2;
+            //        Console.WriteLine("Çarpım: "+result);
+            //        break;
+
+            //    case '/': result = number1 / number2;
+            //        Console.WriteLine("Bölüm: "+result);
+            //        break;
+
+
+            //}
+
+            #endregion
 
             Console.Read();
 
