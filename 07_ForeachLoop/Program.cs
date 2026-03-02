@@ -72,7 +72,73 @@ namespace _07_ForeachLoop
 
             #endregion
 
-            
+            #region Örnek Sınav Sistemi Uygulaması
+
+            Console.WriteLine("***** C# Eğitim Kampı Sınav Uygulaması *****");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+           
+           //sınıftaki öğrenci sayısını kullanıcıdan alma
+            Console.WriteLine("---------------------------------------");
+            Console.Write("Sınıfınızda kaç öğrenci var? : ");
+            int studentCount=int.Parse(Console.ReadLine());
+            Console.WriteLine("---------------------------------------");
+
+           //öğrenci isimlerini ve not ortalamalarını saklayacak diziler
+            string[] studentsNames=new string[studentCount];
+            double[] studentsExamAvg=new double[studentCount];
+
+            for(int i = 0; i < studentCount; i++)
+            {
+                Console.Write($"{i + 1}. öğrencinin adını giriniz: ");
+                studentsNames[i] = Console.ReadLine();
+
+                double totalExamResult = 0;
+
+          //her öğrenci için 3 sınav notu girişi
+
+                for(int j = 0; j < 3; j++)
+                {
+                    Console.Write($"{studentsNames[i]} isimli öğrencinin {j+1}. sınav notunu giriniz:  ");
+                    double value=double.Parse(Console.ReadLine());
+                    totalExamResult += value; //notları topluyoruz
+                }
+                Console.WriteLine();
+
+                studentsExamAvg[i] = totalExamResult / 3;
+
+            }
+
+            //sınav ortalamaları
+
+            for(int i = 0; i < studentCount; i++)
+            {
+                Console.WriteLine($"{studentsNames[i]} isimli öğrencinin ortalaması: {studentsExamAvg[i]}");
+
+                //öğrencilerin ortalaması ve geçip kalma durumları
+
+                if (studentsExamAvg[i] >= 50)
+                {
+                    Console.WriteLine($"{studentsNames[i]} adlı öğrenci dersi geçti");
+                }
+                else
+                {
+                    Console.WriteLine($"{studentsNames[i]} adlı öğrenci dersten kaldı");
+                }
+
+                Console.WriteLine("------------------------------");
+            }
+
+
+
+
+
+
+
+
+            #endregion
 
             Console.Read();
         }
