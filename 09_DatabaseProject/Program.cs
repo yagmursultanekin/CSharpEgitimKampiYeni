@@ -30,7 +30,7 @@ namespace _09_DatabaseProject
             tableNumber=Console.ReadLine();
             Console.WriteLine("-----------------------------------");
 
-            SqlConnection connection = new SqlConnection("Data source=DESKTOP-AIB18V3\\SQLEXPRESS;initial catalog=EgitimKampiDb;integrated security=true");
+            SqlConnection connection = new SqlConnection("Data source=.;initial catalog=EgitimKampiDb;integrated security=true");
             connection.Open();
             SqlCommand command = new SqlCommand("select*from TblCategory",connection);
             SqlDataAdapter adapter=new SqlDataAdapter(command);
@@ -48,30 +48,6 @@ namespace _09_DatabaseProject
                 }
                 Console.WriteLine();
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-
-
-
-
-
-
-
 
 
             Console.Read();
